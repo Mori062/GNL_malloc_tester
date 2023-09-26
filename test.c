@@ -6,7 +6,7 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/26 18:48:21 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/26 19:45:35 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ int	g_cnt = 0;
 char	*fmalloc(int i)
 {
 	char	*str;
+	size_t	size;
 
+	size = (size_t)i;
 	if (g_cnt == N)
 		str = NULL;
 	else
