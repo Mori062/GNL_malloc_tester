@@ -6,7 +6,7 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/26 23:33:29 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/27 00:52:56 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 	while (1)
 	{
 		line = get_next_line(fd);
-		printf("line:[%d]    [%s]", i++, line);
+		printf("line:[%d]    %s", i++, line);
 		if (line == NULL)
 			break ;
 		free(line);
