@@ -6,14 +6,15 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/26 18:46:23 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/26 18:48:21 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libc.h"
-# include "get_next_line.h"
+#include "libc.h"
+#include "test.h"
+#include "get_next_line.h"
+
 int	g_cnt = 0;
-#define N 0
 
 char	*fmalloc(int i)
 {
