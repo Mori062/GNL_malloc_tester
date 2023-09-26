@@ -8,7 +8,7 @@ sed -i 's/malloc/fmalloc/g' get_next_line_utils.c
 
 for i in $(seq 0 50)
 do
-    cc -Wall -Werror -Wextra get_next_line_bonus.c get_next_line_utils_bonus.c test.c -D N=$i -o gnl
+    cc -Wall -Werror -Wextra get_next_line.c get_next_line_utils.c test.c -D N=$i -o gnl
     ./gnl > /dev/null 2>&1
     if [ $? != 0 ]
     then
