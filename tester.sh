@@ -14,6 +14,7 @@ do
     if [ $? != 0 ]
     then
         echo "\x1b[31m malloc KO \x1b[0m"
+        echo "number $i malloc KO" >> malloc.txt
     else
         echo "\x1b[32m malloc OK \x1b[0m"
     fi

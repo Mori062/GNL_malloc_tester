@@ -6,7 +6,7 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/26 19:45:35 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/26 23:33:29 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*fmalloc(int i)
 	if (g_cnt == N)
 		str = NULL;
 	else
-		str = malloc(i);
+		str = malloc(size);
 	g_cnt++;
 	return (str);
 }
@@ -47,6 +47,5 @@ int	main(void)
 		free(line);
 	}
 	close(fd);
-	system("leaks -q gnl");
-	return (0);
+	return (system("leaks -q gnl"));
 }
