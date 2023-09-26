@@ -6,7 +6,7 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/26 18:39:20 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/26 18:46:23 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,16 @@ int	main(void)
 	int		i;
 
 	i = 0;
-	fd1 = open("get_next_line.c", O_RDONLY);
+	fd = open("get_next_line.c", O_RDONLY);
 	while (1)
 	{
-		line = get_next_line(fd1);
+		line = get_next_line(fd);
 		printf("line:[%d]    [%s]", i++, line);
 		if (line == NULL)
 			break ;
 		free(line);
 	}
-	close(fd1);
+	close(fd);
 	system("leaks -q gnl");
 	return (0);
 }
