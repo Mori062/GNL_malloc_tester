@@ -6,11 +6,11 @@
 /*   By: morishitashoto <morishitashoto@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 18:36:10 by morishitash       #+#    #+#             */
-/*   Updated: 2023/09/27 00:52:56 by morishitash      ###   ########.fr       */
+/*   Updated: 2023/09/27 02:04:02 by morishitash      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libc.h"
+#include <libc.h>
 #include "test.h"
 #include "get_next_line.h"
 
