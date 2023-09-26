@@ -4,8 +4,12 @@ cp ../get_next_line.c .
 cp ../get_next_line_utils.c .
 cp ../get_next_line.h .
 
-sed -i -e 's/malloc/fmalloc/g' get_next_line.c
-sed -i -e 's/malloc/fmalloc/g' get_next_line_utils.c
+python3 sed.py
+
+insert='# include "test.h"'
+
+sed -i -e "11i$insert" get_next_line.c
+sed -i -e "11i$insert" get_next_line_utils.c
 
 for i in $(seq 0 50)
 do
