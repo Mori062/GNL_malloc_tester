@@ -8,7 +8,7 @@ git clone https://github.com/Mori062/GNL_malloc_tester.git
 
 cd GNL_malloc_tester
 
-make test
+make
 ```
 
 Caution: This tester only checks for leaks and segfaults when malloc fails.

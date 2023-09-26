@@ -11,7 +11,8 @@ error_count=0
 
 for i in $(seq 0 50)
 do
-    cc -Wall -Werror -Wextra get_next_line.c get_next_line_utils.c test.c -D N=$i -o gnl
+    gcc -Wall -Werror -Wextra -g -fsanitize=address \
+        get_next_line.c get_next_line_utils.c test.c -D N=$i -o gnl
     ./gnl > /dev/null 2>&1
     if [ $? != 0 ]
     then
@@ -26,7 +27,7 @@ do
 done
 if [ $error_count != 0 ]
 then
-    echo "\x1b[31m $error_count malloc errors \x1b[0m"
+    echo "\x1b[31m $error_count malloc errors -> CRASH!\x1b[0m"
 else
     echo "\x1b[32m No malloc errors!\x1b[0m"
 fi
