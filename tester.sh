@@ -4,8 +4,8 @@ cp ../get_next_line.c .
 cp ../get_next_line_utils.c .
 cp ../get_next_line.h .
 
-sed -i 's/malloc/fmalloc/g' get_next_line.c
-sed -i 's/malloc/fmalloc/g' get_next_line_utils.c
+sed -i -e 's/malloc/fmalloc/g' get_next_line.c
+sed -i -e 's/malloc/fmalloc/g' get_next_line_utils.c
 
 for i in $(seq 0 50)
 do
