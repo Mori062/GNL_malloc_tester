@@ -11,4 +11,4 @@ cd GNL_malloc_tester
 make test
 ```
 
-Caution: this tester is only see if your get_next_line does handle malloc correctly.
+Caution: This tester only checks for leaks and segfaults when malloc fails.
